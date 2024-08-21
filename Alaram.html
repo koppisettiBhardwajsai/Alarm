@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alaram</title>
+    <link rel="stylesheet" href="alarm.css" />
+  </head>
+  <body>
+    <h2>ALARM</h2>
+    <div class="clock-container">
+      <h1>00:00:00</h1>
+      <div class="main">
+        <div class="col">
+          <select id="hour">
+            <option value="Hour" selected hidden>Hour</option>
+          </select>
+        </div>
+        <div class="col">
+          <select id="min">
+            <option value="Minutes" selected hidden>Minutes</option>
+          </select>
+        </div>
+        <div class="col">
+          <select id="am/pm">
+            <option value="AM/PM" selected hidden>AM/PM</option>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+      </div>
+      <button>Set Alarm</button>
+    </div>
+    <audio id="aud">
+      <source src="Hi.mp3" type="audio/mp3" />
+    </audio>
+  </body>
+  <script src="alaram.js"></script>
+</html>
